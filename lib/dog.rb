@@ -1,24 +1,43 @@
 class Dog 
+  def name=(dog_name)
+    @this_dog = dog_name
+  end
+  
+  def name
+    @this_dog
+  end
+  
+  def breed=(dog_breed)
+    @this_dog = dog_breed
+  end
+  
+  def breed
+    @this_dog
+  end
+  
+end
   
 
 
 
-
-class Person
- 
-  def initialize(first_name, last_name)
-    @first_name = first_name
-    @last_name = last_name
+# Your code goes here!
+class Dog 
+  def name=(dog_name)
+    @this_dogs_name = dog_name
   end
- 
-  def name=(full_name)
-    first_name, last_name = full_name.split
-    @first_name = first_name
-    @last_name = last_name
-  end
- 
+  
   def name
-    "#{@first_name} #{@last_name}".strip
+    @this_dogs_name
   end
- 
+  
+  def bark
+    puts "woof!"
+  end
 end
+
+
+
+toto = Dog.new 
+toto.name = "toto"
+
+toto.name 
